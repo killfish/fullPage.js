@@ -1698,7 +1698,7 @@
             var panel = getSlideOrSection(destiny);
 
             //stopping HTML5 media elements
-            panel.find('video, audio').each(function(){
+            /** panel.find('video, audio').each(function(){
                 var element = $(this).get(0);
 
                 if( !element.hasAttribute('data-keepplaying') && typeof element.pause === 'function' ) {
@@ -1713,7 +1713,7 @@
                 if( /youtube\.com\/embed\//.test($(this).attr('src')) && !element.hasAttribute('data-keepplaying')){
                     $(this).get(0).contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}','*');
                 }
-            });
+            }); **/
         }
 
         /**
